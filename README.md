@@ -1,52 +1,64 @@
-Patient-Management-System
-This project implements a Priority Queue for managing patients based on their severity and arrival time. Patients with higher severity are prioritized. If two patients have the same severity, the one who arrived earlier is prioritized.
+# Patient-Management-System
 
-It uses a singly linked list to maintain the queue.
+* This project implements a Priority Queue for managing patients based on their severity and arrival time. Patients with higher severity are prioritized. If two patients have the same severity, the one who arrived earlier is prioritized.
 
-Features
-Add (Enqueue) Patients:
+* It uses a singly linked list to maintain the queue.
 
-Patients are added according to their severity and arrival time.
-Serve (Dequeue) Patients:
+# Features
 
-The patient at the front of the queue (highest priority) is served first.
-View Patients:
+* Add (Enqueue) Patients:
 
-Displays the list of patients in the queue in the order they will be served.
-Input Validation:
+   * Patients are added according to their severity and arrival time.
+     
+* Serve (Dequeue) Patients:
 
-Ensures severity is between 1 and 10.
-Re-prompts for invalid severity or invalid continuation choices (y/n).
+    * The patient at the front of the queue (highest priority) is served first.
+      
+* View Patients:
 
-How It Works
-When adding a new patient:
+     * Displays the list of patients in the queue in the order they will be served.
+       
+* Input Validation:
 
-If the queue is empty, the patient is added at the front.
+     * Ensures severity is between 1 and 10.
+       
+* Re-prompts for invalid severity or invalid continuation choices (y/n).
 
-Otherwise, the patient is inserted at the appropriate position based on:
+# How It Works
 
-Higher severity first.
+* When adding a new patient:
 
-For same severity, earlier arrival time first.
+     * If the queue is empty, the patient is added at the front.
 
-Serving a patient:
+     * Otherwise, the patient is inserted at the appropriate position based on:
 
-The patient at the front is removed and displayed.
-After serving:
+     * Higher severity first.
 
-Remaining patients can be viewed.
-Files
-Problem2.h — Header file included (currently empty but reserved for future use).
+     * For same severity, earlier arrival time first.
 
-main.cpp — Contains the Patient structure, PriorityQueue class, and the main() function with the program logic.
+* Serving a patient:
 
-How to Run
-Compile: Using g++:
+     * The patient at the front is removed and displayed.
+       
+* After serving:
 
-g++ main.cpp -o PatientQueue
-Run:
+     * Remaining patients can be viewed.
+       
+# Files
 
-./PatientQueue
+* Problem2.h — Header file included (currently empty but reserved for future use).
+
+* main.cpp — Contains the Patient structure, PriorityQueue class, and the main() function with the program logic.
+
+# How to Run
+
+* Compile: Using g++:
+
+      g++ main.cpp -o PatientQueue
+* Run:
+
+      ./PatientQueue
+  
 Follow the prompts:
 
 Example
