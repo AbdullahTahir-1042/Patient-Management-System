@@ -59,12 +59,15 @@
 
       ./PatientQueue
   
-Follow the prompts:
+* Follow the prompts:
 
-Example
-image
+     * Example
 
-Notes
-The program automatically deletes all dynamically allocated memory when closing.
+    ![image](https://github.com/user-attachments/assets/5cd44a86-1843-4b65-95b0-89ec3e54421c)
 
-You can modify or extend it by adding features like patient search, editing patient details, etc.
+
+# Notes
+
+* The program automatically deletes all dynamically allocated memory when closing.
+
+* You can modify or extend it by adding features like patient search, editing patient details, etc.
